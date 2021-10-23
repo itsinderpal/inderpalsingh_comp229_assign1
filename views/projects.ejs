@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/header.ejs') %>
+
+    <body class="bg-gray-100 text-lg">
+        <%- include('./partials/nav.ejs')%>
+            <div class="flex flex-col justify-center items-center space-y-8">
+                <h2 class="text-2xl font-semibold">Projects Page</h2>
+            </div>
+            <div class="p-8 flex flex-col justify-center items-center space-y-8">
+                <div class="py-6 flex flex-row justify-center items-center space-x-8">
+                    <div>
+                        <img src="./images/journally.jpg" width="800" height="400" alt="journally website screenshot">
+                    </div>
+                    <div class="w-1/2 flex flex-col justify-center items-center space-y-6">
+                        <h3 class="text-2xl font-medium">Journally NextJS App</h3>
+                        <p class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300 hover:cursor-pointer"><a href="https://journally.vercel.app/">Visit Website</a></p>
+                        <p class="leading-8">This was a NextJS project that I did some time ago. It is not a fully functional web app.
+                            It is just a website that I created with different pages for practicing NextJS. The role of
+                            this
+                            project was to learn more about Vercel hosting platform and to practice my ReactJS skills.
+                            I used TailwindCSS in the website which was first time I was trying it and I used it again
+                            in many projects again.
+                            And I used it in this Portfolio site too.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-6 flex flex-row justify-center items-center space-x-8">
+                    <div>
+                        <img src="./images/notes-app.jpg" width="800" height="400" alt="notes app screenshot">
+                    </div>
+                    <div class="w-1/2 flex flex-col justify-center items-center space-y-6">
+                        <h3 class="text-2xl font-medium">Notes ReactJS Web App</h3>
+                        <p class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300 hover:cursor-pointer"><a href="https://notes-app-inder.netlify.app/">Visit Website</a></p>
+                        <p class="leading-8">This project is a Web App based on ReactJS framwork that I did also some time ago. It is a
+                            fully functional web app with CRUD.
+                            That means we can create new notes, read notes, edit notes, and delete notes too. It has
+                            localstorage in it which means your notes are
+                            not deleted once you close your website. They stay in your browser storage and you can keep
+                            editing them and use it as you like.
+                            This project helped me to learn ReactJS and React Hooks which are really important to learn
+                            if you need to get a job as a ReactJS developer.
+                            I uploaded this to Netlify and it has a full history of git commits which helped me track
+                            the project much easier.
+                            I used SASS in this project to sharpen my learn SASS as it is a preprocessor of CSS and is
+                            used in big projects too.
+                        </p>
+                    </div>
+                </div>
+                <div class="py-6 flex flex-row justify-center items-center space-x-8">
+                    <div>
+                        <img src="./images/todo-app.jpg" width="800" height="400" alt="todo app screenshot">
+                    </div>
+                    <div class="w-1/2 flex flex-col justify-center items-center space-y-6">
+                        <h3 class="text-2xl font-medium">Todo React App</h3>
+                        <p class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300 cursor-pointer"><a href="https://react-todo-app-inder.netlify.app/">Visit Website</a></p>
+                        <p class="leading-8">This is also a ReactJS project that I created when I first tried ReactJS and I absolutely
+                            loved it. But unfortunately, this app don't have that many features as the Notes App has but
+                            still this is really good in terms of UI. I used React Hooks in this too, with CRUD
+                            functionality and a editing UI too which helps in editing the TODO in the same place where
+                            the TODO is. I used plain CSS in this one too.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <%- include('./partials/footer.ejs')%>
+    </body>
+
+</html>

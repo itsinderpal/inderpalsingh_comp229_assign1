@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/header.ejs') %>
+
+  <body class="bg-gray-100 text-lg">
+    <%- include('./partials/nav.ejs')%>
+      <div class="flex flex-col justify-center items-center space-y-8">
+        <h1 class="text-2xl font-semibold">Contact Page</h1>
+      </div>
+      <div class="py-8 flex flex-col justify-center items-center">
+        <form class="w-1/2 flex flex-col justify-center items-center space-y-4">
+          <div>
+            <p>First Name:</p>
+            <input type="text" class="rounded-lg outline-none p-2">
+          </div>
+          <div>
+            <p>Last Name:</p>
+            <input type="text" class="rounded-lg outline-none p-2">
+          </div>
+          <div>
+            <p>Contact Number:</p>
+            <input type="number" class="rounded-lg outline-none p-2">
+          </div>
+          <div>
+            <p>Email Address</p>
+            <input type="email" class="rounded-lg outline-none p-2">
+          </div>
+          <div>
+            <p>Message</p>
+            <textarea name="message" cols="24" rows="5" class="rounded-lg outline-none p-2"></textarea>
+          </div>
+          <div class="pt-6">
+            <a href="/" class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300" ><button>Submit</button></a>
+          </div>
+        </form>
+      </div>
+      <%- include('./partials/footer.ejs')%>
+  </body>
+
+</html>

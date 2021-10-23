@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/header.ejs') %>
+
+    <body class="bg-gray-100 text-lg">
+        <%- include('./partials/nav.ejs')%>
+            <div class="flex flex-col justify-center items-center space-y-8">
+                <h2 class="text-2xl font-semibold">Services Page</h2>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="w-2/3 p-8 flex flex-col justify-center items-center space-y-8">
+                    <div class="flex flex-col justify-center items-center space-y-4">
+                        <h3 class="text-xl font-medium">Front End Programming</h3>
+                        <p class="leading-8">I will create the front end of your web application and will integrate the backend for you
+                            too. The front end part includes setting up the stack that you should choose for your site,
+                            like MEAN, MERN, MEVN, or LAMP, the best possible front end JS framework to use too.
+                            I will write well documented and commented code which will help the other developers to know
+                            what is going on in the code.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-4">
+                        <h3 class="text-xl font-medium">Project Documentation</h3>
+                        <p class="leading-8">I offer you the project documentation which means that I will document your code properly and
+                            will debug if necessary in order to make it compatible to add other libraries and frameworks
+                            in the project. I will make a large document of your whole project and will seperate it in
+                            order too.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center space-y-4">
+                        <h3 class="text-xl font-medium">General Python Programming</h3>
+                        <p class="leading-8">I will code console Python apps that you can use to automate your stuff at work which will
+                            help increase your productivity at work. I can use Python to make sure your repetitive tasks
+                            will be handled by it and you can focus on the tasks that are of high priority.
+                        </p>
+                    </div>
+                    <a href="/contact" class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300">Contact Me</a>
+                </div>
+            </div>
+            <%- include('./partials/footer.ejs')%>
+    </body>
+
+</html>

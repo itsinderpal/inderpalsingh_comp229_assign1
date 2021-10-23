@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/header.ejs') %>
+
+    <body class="bg-gray-100 text-lg">
+        <%- include('./partials/nav.ejs')%>
+            <div class="flex flex-col justify-center items-center space-y-8">
+                <h2 class="text-2xl font-semibold">About Page</h2>
+                <div>
+                    <img src="./images/profile_image.jpg" class="rounded-full shadow-xl" height="150" width="150"
+                        alt="">
+                </div>
+                <div class="w-2/3 leading-8 font-mono tracking-tight">
+                    <p>My name is Inderpal Singh and this website is my online portfolio. I have created
+                        this portfolio site to show my clients and companies that I am capable of developing complex
+                        and beautiful websites that is gonna help their businesses make more money using
+                        online advertising.
+                        <br>
+                        I have created a ton of websites while I was learning all this stuff and did some
+                        freelance work in the past too. There are also a lot of ongoing projects that I am
+                        focusing on and will keep on doing them and will keep learning about web development.
+                        <br><br>
+                        You can click on the below button to see my current and past projects and my resume too and can
+                        determine
+                        if I am good fit for your company or not.
+                    </p>
+                    <div class="flex justify-center items-center space-x-6">
+                        <a href="./projects" class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300"><button>Projects</button></a>
+                        <a href="./resume.pdf" class="p-3 mt-8 rounded-lg bg-gray-200 shadow-lg hover:shadow-xl hover:bg-gray-300"><button>My resume</button></a>
+                    </div>
+                </div>
+            </div>
+            <%- include('./partials/footer.ejs')%>
+    </body>
+
+</html>
