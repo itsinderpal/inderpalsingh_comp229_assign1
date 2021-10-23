@@ -1,2 +1,4 @@
 node_modules
 assign
+# Local Netlify folder
+.netlify
