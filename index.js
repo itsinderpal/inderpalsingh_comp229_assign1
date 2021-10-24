@@ -5,6 +5,7 @@
 const express = require('express');
 // creating a instance object
 const app = express();
+const port = 3000;
 
 // setting view engine to ejs view engine
 app.set('view engine', 'ejs');
@@ -13,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 // listening port at 3000 and logging it to console
-app.listen(3000, () => {
+app.listen(process.env.PORT || port, () => {
   console.log('Connected to Port 3000');
 });
 
